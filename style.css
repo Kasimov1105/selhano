@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center {
+  margin: auto;
+  max-width: 121rem;
+  padding-inline: 2rem;
+  box-sizing: content-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  display: block;
+}
+
+header > div:last-child {
+  display: flex;
+  gap: 3.1rem;
+  align-items: center;
+}
+header > div:last-child img {
+  display: block;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3.5rem;
+}
+
+header li a {
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--dark);
+  font-weight: 400;
+}
+
+a.active {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    display: none;
+  }
+}
+.hero {
+  margin-top: 5rem;
+  background: url("./img/hand.svg") center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 8.9rem;
+  height: 35.6rem;
+}
+.hero h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 550;
+  color: white;
+  font-size: 8rem;
+  font-family: "DM Serif Display";
+  text-shadow: 0px 4px 4px 0px #000000;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 20rem;
+  row-gap: 5rem;
+}
+.container .card {
+  width: 27rem;
+  flex-shrink: 0;
+}
+.container .card__top img {
+  width: 100%;
+}
+.container .card__bottom {
+  text-align: center;
+}
+.container .card__bottom p:first-child {
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 0.4rem;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.container .card__bottom p:nth-child(2) {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+.container .card__bottom div:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    flex-grow: 1;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+footer .SERVICES {
+  max-width: 12rem;
+}
+footer .pages {
+  max-width: 12rem;
+}
+footer img {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+footer h2 {
+  font-family: "DM serif display";
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1.6rem;
+}
+footer ul {
+  list-style: none;
+  font-family: "jost";
+}
+footer li a {
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  color: #4D5053;
+}
+footer .interno {
+  max-width: 39rem;
+}
+footer .interno p {
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #4D5053;
+  margin-bottom: 3.5rem;
+}
+footer .interno :last-child {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+}
+footer .adress {
+  max-width: 25.8rem;
+}
+footer .text {
+  font-size: 1.5rem;
+  color: #4D5053;
+  font-family: "jost";
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
+.copyright img {
+  display: flex;
+  margin: auto;
+  margin-top: 10rem;
+  padding-bottom: 5rem;
+}/*# sourceMappingURL=style.css.map */
